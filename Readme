@@ -1,0 +1,26 @@
+
+# DeepSeek-Coder CPU (6.7B)
+
+Run DeepSeek-Coder 6.7B on CPU using Hugging Face Transformers and Gradio.
+
+## Features
+- No GPU needed
+- Gradio web interface (port 7860)
+- Supports HTML, PHP, WordPress code generation
+
+## Usage
+
+### Build and Run
+```bash
+docker build -t ghcr.io/YOUR_USERNAME/deepseek-coder-cpu:6.7b .
+docker run -p 7860:7860 ghcr.io/YOUR_USERNAME/deepseek-coder-cpu:6.7b
+```
+
+### Push to GHCR
+```bash
+docker login ghcr.io -u YOUR_USERNAME
+docker push ghcr.io/YOUR_USERNAME/deepseek-coder-cpu:6.7b
+```
+
+### Visit
+http://localhost:7860
